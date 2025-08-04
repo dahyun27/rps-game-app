@@ -11,11 +11,13 @@ class RSPApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("가위 바위 보!"),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("가위 바위 보!"),
+        ),
+        body: GameBody(),
       ),
-      body: GameBody(),
     );
   }
 }
